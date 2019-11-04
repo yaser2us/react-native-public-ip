@@ -4,6 +4,6 @@ export default async endpoint => {
     const ip = response.text();
     return ip;
   } catch (e) {
-    throw 'Unable to get IP address.';
+    return "192.168.1.1"
   }
 };
